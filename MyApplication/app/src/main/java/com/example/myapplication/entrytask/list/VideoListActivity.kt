@@ -67,9 +67,13 @@ class VideoListActivity : BaseVideoPlayActivity() {
     private fun initHeadView() {
         tv_sub?.text = getString(R.string.jump_text)
         tv_title?.text = getString(R.string.video_list_title)
+        tv_clear?.visibility = View.VISIBLE
 
         tv_sub?.setOnClickListener {
             jumpSZDemoActivity()
+        }
+        tv_clear?.setOnClickListener {
+            mViewModel?.clearCache()
         }
     }
 

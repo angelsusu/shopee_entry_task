@@ -83,6 +83,10 @@ class VideoListRepository {
         return videoListData
     }
 
+    fun clearCache() {
+        SPManager.getInstance().putInt(CACHE_SIZE_KEY, 0)
+    }
+
     companion object {
         private const val CACHE_DATA_KEY = "video_data_key_"
         private const val CACHE_SIZE_KEY = "cache_size"

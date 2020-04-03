@@ -61,16 +61,16 @@ class VideoListViewModel : ViewModel() {
         getVideoList()
     }
 
-    fun isCanLoadMore(): Boolean {
-        return mIsCanLoadMore
-    }
-
     fun getLiveData(): MutableLiveData<VideoListData> {
         return mVideoListData
     }
 
     fun initData() {
         mVideoListData.value = mRepository.getLocalCache()
+    }
+
+    fun clearCache() {
+        mRepository.clearCache()
     }
 
     companion object {

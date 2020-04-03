@@ -13,4 +13,5 @@
     <string name="net_error">啊哦，网络出错啦，请重试~</string>
     <string name="request_fail">啊哦，获取数据失败</string>
     <string name="no_more_data">没有更多数据了</string>
+    <string name="clear_cache">清空缓存</string>
 </resources>

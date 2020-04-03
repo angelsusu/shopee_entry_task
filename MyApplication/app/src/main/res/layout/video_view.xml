@@ -6,12 +6,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:descendantFocusability="blocksDescendants"
     android:orientation="vertical"
-    android:paddingTop="15dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -39,7 +38,7 @@
     <FrameLayout
         android:id="@+id/rl_video"
         android:layout_width="match_parent"
-        android:layout_height="250dp">
+        android:layout_height="200dp">
 
         <com.google.android.exoplayer2.ui.SimpleExoPlayerView
             android:id="@+id/player_view"

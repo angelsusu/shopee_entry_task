@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <include layout="@layout/common_head_layout"/>
@@ -22,7 +23,8 @@
             android:id="@+id/lv_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:divider="@null" />
+            android:divider="@drawable/item_divider"
+            android:dividerHeight="10dp"/>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
