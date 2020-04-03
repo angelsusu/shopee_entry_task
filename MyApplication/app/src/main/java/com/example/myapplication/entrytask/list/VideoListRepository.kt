@@ -84,6 +84,13 @@ class VideoListRepository {
     }
 
     fun clearCache() {
+        val cacheCount = SPManager.getInstance().getInt(CACHE_SIZE_KEY)
+        if (cacheCount <= 0) {
+            return
+        }
+        for (index in 0 until cacheCount) {
+            SPManager.getInstance().putString(CACHE_DATA_KEY + index, "")
+        }
         SPManager.getInstance().putInt(CACHE_SIZE_KEY, 0)
     }
 
